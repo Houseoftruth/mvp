@@ -37,55 +37,23 @@
         </div>
 
       -->
-      <div class="col s12 l12 left-align red lighten-4 animated slideInRight">
-        <h3 class="montserrat">Kitchen</h3>
+      <div *ngFor="let kmessage of kitchenMessages"class="col s12 l12 left-align red lighten-4 animated slideInRight">
+          <h3 class="montserrat">{{kmessage.name}}</h3>
+          <div class="divider"></div>
+          <p class="montserrat">{{kmessage.body}}</p>
+          <i class="material-icons">add</i>
+
+      </div>
+
+      <div *ngFor="let tmessage of tableMessages" class="col s12 l3 right-align grey lighten-4 animated fadeIn">
+
+        <h3 class="montserrat">{{tmessage.name}}</h3>
         <div class="divider"></div>
-        <p class="montserrat">jalsdjfalksdjflaksjdkfasdfasdklflasd</p>
+        <p class="montserrat">{{tmessage.body}}</p>
         <i class="material-icons">add</i>
 
       </div>
 
-      <div class="col s12 l3 right-align grey lighten-4 animated slideInLeft">
-
-        <h3 class="montserrat">Table #32</h3>
-        <div class="divider"></div>
-        <p class="montserrat">jalsdjfalksdjflaksjdkfasdfasdklflasd</p>
-        <i class="material-icons">add</i>
-
-      </div>
-
-      <div class="col s12 l12 left-align yellow lighten-4 animated slideInRight">
-          <h3 class="montserrat">Kitchen</h3>
-          <div class="divider"></div>
-          <p class="montserrat">jalsdjfalksdjflaksjdkfasdfasdklflasd</p>
-          <i class="material-icons">add</i>
-
-        </div>
-  
-        <div class="col s12 l3 right-align grey lighten-4 animated slideInLeft">
-  
-          <h3 class="montserrat">Table #16</h3>
-          <div class="divider"></div>
-          <p class="montserrat">jalsdjfalksdjflaksjdkfasdfasdklflasd</p>
-          <i class="material-icons">add</i>
-
-        </div>
-        <div class="col s12 l12 left-align green lighten-4 animated slideInRight">
-            <h3 class="montserrat">Kitchen</h3>
-            <div class="divider"></div>
-            <p class="montserrat">jalsdjfalksdjflaksjdkfasdfasdklflasd</p>
-            <i class="material-icons">add</i>
-
-          </div>
-    
-          <div class="col s12 l3 right-align animated slideInLeft">
-    
-            <h3 class="montserrat">Table #8</h3>
-            <div class="divider"></div>
-            <p class="montserrat">jalsdjfalksdjflaksjdkfasdfasdklflasd</p>
-            <i class="material-icons">add</i>
-
-          </div>
 
 
     </div>
@@ -105,7 +73,9 @@
 <router-outlet></router-outlet>
 <footer class="page-footer black" style="box-shadow:2px 2px 2px grey;">
   <div class="input-field col s12">
-    <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+    <input 
+    [(ngModel)]="name" #ctrl="ngModel" 
+    placeholder="Placeholder" id="first_name" type="text" class="validate">
     <label for="first_name">First Name</label>
   </div>
   <div class="container">
@@ -117,7 +87,7 @@
         <i class="material-icons">add</i>
       </div>
       <div class="col s4 center-align">
-        <i class="material-icons">keyboard_return</i>
+        <i (click)="getInput()" class="material-icons">keyboard_return</i>
       </div>
       <!--
           <div class="col l6 s12">
