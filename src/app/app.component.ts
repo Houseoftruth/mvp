@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component,ViewChildren, QueryList, ElementRef, AfterViewInit  } from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  @ViewChildren("tmessageDiv") tmessageDivs: QueryList<ElementRef>;
+
+  ngAfterViewInit() {
+    this.tmessageDivs.changes.subscribe(() => {
+      if (this.tmessageDivs && this.tmessageDivs.last) {
+        this.tmessageDivs.last.nativeElement.focus();
+      }
+    });
+  }
   title = 'mvp-angular!';
   name: string = '';
   tableMessages = [{
