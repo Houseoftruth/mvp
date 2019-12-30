@@ -83,11 +83,13 @@ export class AppComponent {
     this.audio2.src = "../assets/tap.wav";
     this.audio2.load();
     this.audio2.play();
-    this.messageSelected = true;
+    
     if(!this.options){
       this.options = true;
+      this.messageSelected = true;
     }else{
       this.options = false;
+      this.messageSelected = false;
 
     }
     //window.navigator.vibrate(50);

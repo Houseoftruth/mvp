@@ -46,9 +46,9 @@
       </div>
 
       <div (click)="selecto()" 
-    tabindex="1" #tmessageDiv *ngFor="let tmessage of tableMessages" class="col s12 l3 right-align  lighten-4 animated fadeIn"[ngClass]="{
+    tabindex="1" #tmessageDiv *ngFor="let tmessage of tableMessages" class="col s12 l3 right-align grey  animated fadeIn"[ngClass]="{
         'lighten-2':messageSelected,
-        'grey':!messageSelected,
+        
         'lighten-4':!messageSelected
       }">
 
