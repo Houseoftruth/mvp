@@ -45,7 +45,12 @@
 
       </div>
 
-      <div (click)="selecto()"  tabindex="1" #tmessageDiv *ngFor="let tmessage of tableMessages" class="col s12 l3 right-align grey lighten-4 animated fadeIn">
+      <div (click)="selecto()" 
+    tabindex="1" #tmessageDiv *ngFor="let tmessage of tableMessages" class="col s12 l3 right-align  lighten-4 animated fadeIn"[ngClass]="{
+        'lighten-2':messageSelected,
+        'grey':!messageSelected,
+        'lighten-4':!messageSelected
+      }">
 
         <h3 class="montserrat">{{tmessage.name}}</h3>
         <div class="divider"></div>
@@ -63,7 +68,7 @@
 
     </div>
     <div class="col s4 center-align">
-        <i class="material-icons flow-text" style="font-size:27px;">face</i>
+        <i class="material-icons flow-text" style="font-size:27px; ">face</i>
         <p class = "montserrat">Speak To A Rep</p>
 
       </div>

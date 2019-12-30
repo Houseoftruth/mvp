@@ -19,6 +19,7 @@ export class AppComponent {
   title = 'mvp-angular!';
   name: string = '';
   options: boolean = false;
+  messageSelected: boolean=false;
   audio = new Audio();
   audio2 = new Audio();
 
@@ -82,6 +83,7 @@ export class AppComponent {
     this.audio2.src = "../assets/tap.wav";
     this.audio2.load();
     this.audio2.play();
+    this.messageSelected = true;
     if(!this.options){
       this.options = true;
     }else{
