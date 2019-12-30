@@ -45,6 +45,8 @@ export class AppComponent {
                       body:this.name
                     }
                     this.tableMessages.push(newTMessage)
+                    this.audio.load()
+
                     this.audio.play()
                     console.log(this.name)
                  }
