@@ -68,7 +68,12 @@ export class AppComponent {
     this.audio2.src = "../assets/tap.wav";
     this.audio2.load();
     this.audio2.play();
-    this.options = true
-    window.navigator.vibrate(100);
+    if(!this.options){
+      this.options = true;
+    }else{
+      this.options = false;
+
+    }
+    window.navigator.vibrate(50);
   }
 }
