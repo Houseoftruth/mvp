@@ -18,8 +18,8 @@ export class AppComponent {
   }
   title = 'mvp-angular!';
   name: string = '';
-  audio = new Audio('../assets/sendmessage.wav');
-  
+   audio = new Audio();
+ 
   tableMessages = [{
     name: "Table #32",
     body:"May i please have some more celery on my plate, please. :)"}, {
@@ -45,9 +45,9 @@ export class AppComponent {
                       body:this.name
                     }
                     this.tableMessages.push(newTMessage)
-                    this.audio.load()
-
-                    this.audio.play()
+                    this.audio.src = "../assets/sendmessage.wav";
+                    this.audio.load();
+                    this.audio.play();  
                     console.log(this.name)
                  }
 }
