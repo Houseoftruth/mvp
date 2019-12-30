@@ -74,6 +74,6 @@ export class AppComponent {
       this.options = false;
 
     }
-    window.navigator.vibrate(50);
+    //window.navigator.vibrate(50);
   }
 }
