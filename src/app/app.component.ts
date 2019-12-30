@@ -49,6 +49,20 @@ export class AppComponent {
     name: "Kitchen",
     body: "May i please have some more celery on my plate, please. :)"
   }];
+  getInput2() {
+    //this.name = 'Nancy';
+    let newKMessage = {
+      name: "Table 8",
+      body: this.name
+    }
+    this.kitchenMessages.push(newKMessage)
+    this.audio.src = "../assets/sendmessage.wav";
+    this.audio.load();
+    this.audio.play();
+    window.navigator.vibrate(50);
+
+    console.log(this.name)
+  }
   getInput() {
     //this.name = 'Nancy';
     let newTMessage = {
