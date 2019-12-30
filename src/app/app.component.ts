@@ -58,7 +58,7 @@ export class AppComponent {
     this.audio.src = "../assets/sendmessage.wav";
     this.audio.load();
     this.audio.play();
-    window.navigator.vibrate(200);
+    window.navigator.vibrate(50);
     console.log(this.name)
   }
   selecto() {
@@ -66,6 +66,6 @@ export class AppComponent {
     this.audio2.src = "../assets/tap.wav";
     this.audio2.load();
     this.audio2.play();
-    window.navigator.vibrate(200);
+    window.navigator.vibrate(100);
   }
 }
