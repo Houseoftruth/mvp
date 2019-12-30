@@ -58,12 +58,14 @@ export class AppComponent {
     this.audio.src = "../assets/sendmessage.wav";
     this.audio.load();
     this.audio.play();
+    window.navigator.vibrate(200);
     console.log(this.name)
   }
- selecto(){
+  selecto() {
 
-  this.audio2.src = "../assets/tap.wav";
-  this.audio2.load();
-  this.audio2.play();
- }
+    this.audio2.src = "../assets/tap.wav";
+    this.audio2.load();
+    this.audio2.play();
+    window.navigator.vibrate(200);
+  }
 }
