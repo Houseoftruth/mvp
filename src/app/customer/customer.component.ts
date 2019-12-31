@@ -140,6 +140,8 @@ if(this.messagePressed){
   openChatBox() {
     if(this.chatInputOpen){
       this.chatInputOpen=false;
+      window.navigator.vibrate(50);
+
       
     }else{
       this.chatInputOpen=true;
