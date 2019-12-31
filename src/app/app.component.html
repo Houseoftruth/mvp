@@ -1,85 +1,28 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 
 <div class="navbar-fixed">
-  <nav class="black">
-    <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">MVP</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-      </ul>
-    </div>
-  </nav>
-</div>
+    <nav> <!-- navbar content here  --> </nav>
 
-
-<div class="container">
-  <div class="col s12 l12 ">
-    <div class="row" style="overflow-y:auto; height:500px;">
-      <!-- <div class = "col s3 l3">
-
+    <ul id="slide-out" class="sidenav">
+      <li><div class="user-view">
+        <div class="background">
+          <img src="images/office.jpg">
         </div>
-        <div class = "col s3 l3 center-align">
+        <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+        <a href="#name"><span class="white-text name">John Doe</span></a>
+        <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+      </div></li>
+      <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+      <li><a href="#!">Second Link</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="subheader">Subheader</a></li>
+      <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+    </ul>
+    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           
-          <object id="svg-object" style="height:300px;" data='../assets/rocket22.svg'
-          type="image/svg+xml"></object>
-        </div>
-        <div class = "col s3 l3">
-          
-        </div>
-
-      -->
-      <div (click)="selecto()"  *ngFor="let kmessage of kitchenMessages"class="col s12 l12 left-align red lighten-4 animated slideInRight">
-          <h3 class="montserrat">{{kmessage.name}}</h3>
-          <div class="divider"></div>
-          <p class="montserrat">{{kmessage.body}}</p>
-          <i class="material-icons">add</i>
-
-      </div>
-
-      <div (click)="selecto()" 
-    tabindex="1" #tmessageDiv *ngFor="let tmessage of tableMessages" class="col s12 l3 right-align grey  animated fadeIn"[ngClass]="{
-        'lighten-2':messageSelected,
-        
-        'lighten-4':!messageSelected
-      }">
-
-        <h3 class="montserrat">{{tmessage.name}}</h3>
-        <div class="divider"></div>
-        <p class="montserrat">{{tmessage.body}}</p>
-<div class="row" style="border-top:#ddd; border:black; border-left:black;border-bottom:black;" [hidden]="!options">
-    <div class="divider"></div>
-
-  <div class="col s4 center-align">
-      <i class="material-icons"style="font-size:27px;">add</i>
-    <p class = "montserrat">Change Order</p>
-  </div>
-  <div class="col s4 center-align">
-      <i class="material-icons"style="font-size:27px;">info_outline</i>
-      <p class = "montserrat">Order Info</p>
-
-    </div>
-    <div class="col s4 center-align">
-        <i class="material-icons flow-text" style="font-size:27px; ">face</i>
-        <p class = "montserrat">Speak To A Rep</p>
-
-      </div>
 </div>
-      </div>
 
 
-
-    </div>
-  </div>
-</div>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
@@ -92,44 +35,9 @@
 
 
 <router-outlet></router-outlet>
-<footer class="page-footer black" style="box-shadow:2px 2px 2px grey;">
-  <div class="input-field col s12">
-    <input 
-    [(ngModel)]="name" #ctrl="ngModel" 
-    placeholder="Placeholder" id="first_name" type="text" class="validate">
-    <label for="first_name">First Name</label>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col s4 center-align">
-        <i class="material-icons">add</i>
-      </div>
-      <div class="col s4 center-align">
-        <i class="material-icons">add</i>
-      </div>
-      <div class="col s4 center-align">
-        <i (click)="getInput()" class="material-icons">keyboard_return</i>
-      </div>
-      <!--
-          <div class="col l6 s12">
-        <h5 class="white-text">Footer Content</h5>
-        <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-      </div>
-      <div class="col l4 offset-l2 s12">
-        <h5 class="white-text">Links</h5>
-        <ul>
-          <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-        </ul>
-      </div>-->
-    </div>
-  </div>
-  <div class="footer-copyright">
-    <div class="container">
-      © 2014 Copyright Text
-      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-    </div>
-  </div>
-</footer>
+
+<script>
+$(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+</script>
