@@ -61,6 +61,7 @@ export class CustomerComponent implements OnInit {
   selecto(loopindex) {
     console.log(loopindex)
     console.log(this.bothMessages[loopindex])
+    this.openChatBox() 
     if (this.bothMessages[loopindex].colorposition == 'red') {
 
       this.bothMessages[loopindex].color = ' col s12 l3 right-align   animated fadeIn grey lighten-4'
