@@ -19,6 +19,9 @@ export class CustomerComponent implements OnInit {
   name: string = '';
   options: boolean = false;
   messageSelected: boolean = false;
+  messagePressed: boolean = false;
+  messageNotPressed: boolean = true;
+  receiptPressed: boolean = false;
   audio = new Audio();
   audio2 = new Audio();
   bothMessages = [{
@@ -110,8 +113,14 @@ export class CustomerComponent implements OnInit {
     this.bothMessages.push(newTMessage)
     console.log(newKMessage.array + 1)
 
+if(this.messagePressed){
+  this.messagePressed=false;
 
+}else{
+  this.messagePressed=true;
 
+}
+    
 
     this.audio.src = "../assets/sendmessage.wav";
     this.audio.load();
@@ -140,7 +149,13 @@ export class CustomerComponent implements OnInit {
     }
     let messageArray = [newTMessage, newKMessage]
 
+if(this.receiptPressed){
+  this.receiptPressed=false;
+  
+}else{
+  this.receiptPressed=true;
 
+}
     this.bothMessages.push(newKMessage)
     console.log(newKMessage.array + 1)
 
