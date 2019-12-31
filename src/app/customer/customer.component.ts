@@ -157,6 +157,13 @@ if(this.receiptPressed){
   this.receiptPressed=true;
 
 }
+if(this.chatInputOpen){
+  this.chatInputOpen=false;
+
+}else{
+  this.chatInputOpen=true;
+
+}
     this.bothMessages.push(newKMessage)
     console.log(newKMessage.array + 1)
 
