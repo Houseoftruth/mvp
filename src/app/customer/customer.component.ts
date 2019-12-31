@@ -121,11 +121,17 @@ if(this.messagePressed){
   this.messagePressed=true;
 
 }
-    
+if(this.chatInputOpen){
+  this.chatInputOpen=false;
+
+}else{
+  this.chatInputOpen=true;
+
+}
 
     this.audio.src = "../assets/sendmessage.wav";
     this.audio.load();
-    this.audio.play();
+   // this.audio.play();
     window.navigator.vibrate(50);
 
     console.log(this.name)
@@ -157,13 +163,7 @@ if(this.receiptPressed){
   this.receiptPressed=true;
 
 }
-if(this.chatInputOpen){
-  this.chatInputOpen=false;
 
-}else{
-  this.chatInputOpen=true;
-
-}
     this.bothMessages.push(newKMessage)
     console.log(newKMessage.array + 1)
 
