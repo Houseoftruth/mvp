@@ -1,6 +1,32 @@
 <div class="container">
     <div class="col s12 l12 ">
-        <div class="row" style="overflow-y:auto; height:500px;">
+
+            <div [hidden]="!receiptPressed"class="row black" style="overflow-y:auto; height:500px;">
+
+                <div class = "col s12 right-align">
+
+
+<h3 class="montserrat grey">(OHRHA)</h3>
+                </div>
+                    <!-- <div class = "col s3 l3">
+              
+
+                      </div>
+                      <div class = "col s3 l3 center-align">
+                        
+                        <object id="svg-object" style="height:300px;" data='../assets/rocket22.svg'
+                        type="image/svg+xml"></object>
+                      </div>
+                      <div class = "col s3 l3">
+                        
+                      </div>
+              
+                    -->
+        
+        
+        
+                </div>
+        <div [hidden]="receiptPressed"class="row" style="overflow-y:auto; height:500px;">
             <!-- <div class = "col s3 l3">
       
               </div>
