@@ -128,13 +128,7 @@ if(this.messagePressed){
   this.messagePressed=true;
 
 }
-if(this.chatInputOpen){
-  this.chatInputOpen=false;
 
-}else{
-  this.chatInputOpen=true;
-
-}
 
     this.audio.src = "../assets/sendmessage.wav";
     this.audio.load();
