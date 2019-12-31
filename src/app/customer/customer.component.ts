@@ -44,6 +44,22 @@ export class CustomerComponent implements OnInit {
     name: "Kitchen",
     body: "May i please have some more celery on my plate, please. :)"
   }]
+  selecto() {
+
+    this.audio2.src = "../assets/tap.wav";
+    this.audio2.load();
+    this.audio2.play();
+    
+    if(!this.options){
+      this.options = true;
+      this.messageSelected = true;
+    }else{
+      this.options = false;
+      this.messageSelected = false;
+
+    }
+    //window.navigator.vibrate(50);
+  }
   getInput() {
     //this.name = 'Nancy';
     let newTMessage = {
