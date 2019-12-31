@@ -55,7 +55,7 @@ export class CustomerComponent implements OnInit {
       this.bothMessages[loopindex].color = ' col s12 l3 right-align   animated fadeIn grey lighten-4'
       this.bothMessages[loopindex].colorposition = 'grey'
       console.log(this.bothMessages[loopindex].colorposition)
-      
+
     } else if (this.bothMessages[loopindex].colorposition == 'green') {
 
       this.bothMessages[loopindex].color = ' col s12 l3 right-align   animated fadeIn red lighten-4'
@@ -92,13 +92,16 @@ export class CustomerComponent implements OnInit {
       name: "Table #8",
       body: this.name,
       color: ' col s12 l3 right-align   animated fadeIn green lighten-4',
-      array: 0
+      array: 0,
+      colorposition:'green'
     }
     let newKMessage = {
       name: "Kitchen",
       body: this.name,
       color: ' col s12 l3 right-align   animated fadeIn red lighten-4',
       array: 1
+      ,
+      colorposition:'red'
 
     }
     let messageArray = [newTMessage, newKMessage]
