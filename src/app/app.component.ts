@@ -15,6 +15,7 @@ export class AppComponent {
         this.tmessageDivs.last.nativeElement.focus();
       }
     });
+ 
   }
   title = 'mvp-angular!';
   name: string = '';

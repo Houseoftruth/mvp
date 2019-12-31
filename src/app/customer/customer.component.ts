@@ -7,11 +7,18 @@ import { Component, ViewChildren, QueryList, ElementRef, AfterViewInit, OnInit }
 })
 export class CustomerComponent implements OnInit {
   @ViewChildren("tmessageDiv") tmessageDivs: QueryList<ElementRef>;
+  @ViewChildren("tmessageDiv2") tmessageDivs2s: QueryList<ElementRef>;
+
 
   ngAfterViewInit() {
     this.tmessageDivs.changes.subscribe(() => {
       if (this.tmessageDivs && this.tmessageDivs.last) {
         this.tmessageDivs.last.nativeElement.focus();
+      }
+    });
+    this.tmessageDivs2s.changes.subscribe(() => {
+      if (this.tmessageDivs2s && this.tmessageDivs2s.last) {
+        this.tmessageDivs2s.last.nativeElement.focus();
       }
     });
   }
