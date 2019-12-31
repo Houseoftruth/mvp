@@ -1,54 +1,42 @@
-<div class="container">
-    <div class="col s12 l12 ">
-
-            <div [hidden]="!receiptPressed"class="row " style="overflow-y:auto; height:500px;">
-
-                <div class = "col s12 right-align">
-
-
-<h3 class="montserrat grey">(OHRHA)</h3>
-<h3 class="montserrat grey">(OHRHA)</h3>
-<h3 class="montserrat grey">(OHRHA)</h3>
-<h3 class="montserrat grey">(OHRHA)</h3>
-                </div>
-                <div class = "col s12"style="border:2px solid black;"></div>
-                <div class = "col s4 center-align">
-                        <object id="svg-object" class = "animated slideInLeft" style="height:150px;" data='../assets/bill.svg'
-                        type="image/svg+xml"></object>
-                        <i class="material-icons" style="font-size: 30px;" >arrow_downwards</i>
-
-                </div>
-                <div class = "col s8 right-align">
-                        <h5 class="montserrat ">(OHRHA)</h5>
-                        <div class = "col s12"style="border:2px solid black;"></div>
-                    <p class = "montserrat">$43.00</p>
-                    <p class = "montserrat">$43.00</p>
-                    <p class = "montserrat">$43.00</p>
-                    <div class = "col s6">
-
-                    </div>
-
-                    <div class = "col s6"style="border:2px solid black;"></div>
-                    <p class = "montserrat">$43.00</p>
-
-
-                        <h5 class="montserrat ">$43.00</h5>
-                        <div class = "col s12"style="border:2px solid black;">
-
-                        </div>
-                        <div class = "col s4 center-align ">
-                                
-                                <div class = "col s12"style="border:2px solid black;"></div>
-                                </div>
-                        <div class = "col s8 right-align black">
-                        <h5 class="montserrat  white">CONTACT REP                <i class="material-icons" >face</i>
-                        </h5>
-                        <div class = "col s12"style="border:2px solid black;"></div>
-                        </div>
-
-
-                </div>
-                    <!-- <div class = "col s3 l3">
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div class="container">
+		<div class="col s12 l12">
+			<div class="row" style="overflow-y:auto; height:500px;">
+				<div class="col s12 right-align">
+					<h3 class="montserrat grey">(OHRHA)</h3>
+					<h3 class="montserrat grey">(OHRHA)</h3>
+					<h3 class="montserrat grey">(OHRHA)</h3>
+					<h3 class="montserrat grey">(OHRHA)</h3>
+				</div>
+				<div class="col s12" style="border:2px solid black;"></div>
+				<div class="col s4 center-align">
+					<object class="animated slideInLeft" data='../assets/bill.svg' id="svg-object" style="height:150px;" type="image/svg+xml">
+					</object> <i class="material-icons" style="font-size: 30px;">arrow_downwards</i>
+				</div>
+				<div class="col s8 right-align">
+					<h5 class="montserrat">(OHRHA)</h5>
+					<div class="col s12" style="border:2px solid black;"></div>
+					<p class="montserrat">$43.00</p>
+					<p class="montserrat">$43.00</p>
+					<p class="montserrat">$43.00</p>
+					<div class="col s6"></div>
+					<div class="col s6" style="border:2px solid black;"></div>
+					<p class="montserrat">$43.00</p>
+					<h5 class="montserrat">$43.00</h5>
+					<div class="col s12" style="border:2px solid black;"></div>
+					<div class="col s4 center-align">
+						<div class="col s12" style="border:2px solid black;"></div>
+					</div>
+					<div class="col s8 right-align black">
+						<h5 class="montserrat white">CONTACT REP <i class="material-icons">face</i></h5>
+						<div class="col s12" style="border:2px solid black;"></div>
+					</div>
+				</div><!-- <div class = "col s3 l3">
               
 
                       </div>
@@ -62,12 +50,9 @@
                       </div>
               
                     -->
-        
-        
-        
-                </div>
-        <div [hidden]="receiptPressed"class="row" style="overflow-y:auto; height:500px;">
-            <!-- <div class = "col s3 l3">
+			</div>
+			<div class="row" style="overflow-y:auto; height:500px;">
+				<!-- <div class = "col s3 l3">
       
               </div>
               <div class = "col s3 l3 center-align">
@@ -80,19 +65,10 @@
               </div>
       
             -->
-
-
-            <div (click)="selecto(i)" tabindex="1" #tmessageDiv *ngFor="let tmessage of bothMessages let i = index"
-                class=" {{tmessage.color}}" [ngClass]="{
-              'lighten-3':messageSelected,
-              
-              'lighten-4':!messageSelected
-            }">
-
-                <h3 class="montserrat">{{tmessage.name}}</h3>
-                <div class="divider"></div>
-                <p class="montserrat">{{tmessage.body}}</p>
-                <!--<div class="row" style="border-top:#ddd; border:black; border-left:black;border-bottom:black;" [hidden]="!options">
+				<div class=" {{tmessage.color}}" tabindex="1">
+					<h3 class="montserrat">{{tmessage.name}}</h3>
+					<div class="divider"></div>
+					<p class="montserrat">{{tmessage.body}}</p><!--<div class="row" style="border-top:#ddd; border:black; border-left:black;border-bottom:black;" [hidden]="!options">
           <div class="divider"></div>
       
         <div class="col s4 center-align">
@@ -110,56 +86,41 @@
       
             </div>
       </div>-->
-            </div>
-
-
-
-        </div>
-    </div>
-</div>
-<footer class="page-footer black" style="box-shadow:2px 2px 2px grey;" >
-    <div class="input-field col s12" [hidden]="!chatInputOpen">
-            <div class="col s12 right-align"(click)="getInput()">                <i class="material-icons" style="font-size:20px;">clear </i>
-            </div>
-        <input [(ngModel)]="name" #ctrl="ngModel" placeholder="Place your order here..." id="first_name" type="text"
-            class="validate">
-        <label for="first_name">First Name</label>
-        <div class="col s12 right-align"(click)="openChatBox()">                <i class="material-icons" style="font-size:30px;">keyboard_return</i>
-        </div>
-        <div class="col s3 ">  </div>
-        <div class="col s6 "style="border:1px solid grey lighten-4;">  </div>
-        <div class="col s3 ">  </div>
-
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col s4 center-align"#tmessageDiv2 >
-                    <div (click)="openChatBox()">
-
-                <object id="svg-object" class="animated fadeIn" style="height:50px; width:50px;"[hidden]="messagePressed" data='../assets/messageicon.svg'
-                    type="image/svg+xml"></object> 
-
-                    <object id="svg-object" class="animated fadeIn" style="height:50px; width:50px;" [hidden]="!messagePressed"data='../assets/messageiconpressed.svg'
-                    type="image/svg+xml"></object> 
-                
-                </div>
-
-            <div class="col s4 center-align">
-<br>
-                <i class="material-icons" style="font-size:25px;">av_timer</i>
-
-            </div>
-
-            <div class="col s4 center-align" >
-<div (click)="getInput22()">
-                <object id="svg-object" class = "animated fadeIn"style="height:50px; width:50px;"[hidden]="receiptPressed"  data='../assets/reciepticon.svg'
-                    type="image/svg+xml"></object>
-                    <object id="svg-object"  class = "animated fadeIn" style="height:50px; width:50px;"[hidden]="!receiptPressed"  data='../assets/reciepticonpressed.svg'
-                    type="image/svg+xml"></object>
-                    </div>
-
-            </div>
-            <!--
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="page-footer black" style="box-shadow:2px 2px 2px grey;">
+		<div class="input-field col s12">
+			<div class="col s12 right-align">
+				<i class="material-icons" style="font-size:20px;">clear</i>
+			</div><input class="validate" id="first_name" placeholder="Place your order here..." type="text"> <label for="first_name">First Name</label>
+			<div class="col s12 right-align">
+				<i class="material-icons" style="font-size:30px;">keyboard_return</i>
+			</div>
+			<div class="col s3"></div>
+			<div class="col s6" style="border:1px solid grey lighten-4;"></div>
+			<div class="col s3"></div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col s4 center-align">
+					<div>
+						<object class="animated fadeIn" data='../assets/messageicon.svg' id="svg-object" style="height:50px; width:50px;" type="image/svg+xml">
+						</object> <object class="animated fadeIn" data='../assets/messageiconpressed.svg' id="svg-object" style="height:50px; width:50px;" type="image/svg+xml">
+						</object>
+					</div>
+					<div class="col s4 center-align">
+						<br>
+						<i class="material-icons" style="font-size:25px;">av_timer</i>
+					</div>
+					<div class="col s4 center-align">
+						<div>
+							<object class="animated fadeIn" data='../assets/reciepticon.svg' id="svg-object" style="height:50px; width:50px;" type="image/svg+xml">
+							</object> <object class="animated fadeIn" data='../assets/reciepticonpressed.svg' id="svg-object" style="height:50px; width:50px;" type="image/svg+xml">
+							</object>
+						</div>
+					</div><!--
                     <div class="col l6 s12">
                   <h5 class="white-text">Footer Content</h5>
                   <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
@@ -173,12 +134,14 @@
                     <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
                   </ul>
                 </div>-->
-        </div>
-    </div>
-    <div class="footer-copyright">
-        <div class="container">
-            © 2014 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-        </div>
-    </div>
-</footer>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container">
+					© 2014 Copyright Text <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
