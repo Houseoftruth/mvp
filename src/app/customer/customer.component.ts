@@ -18,6 +18,7 @@ export class CustomerComponent implements OnInit {
   title = 'mvp-angular!';
   name: string = '';
   options: boolean = false;
+  chatInputOpen: boolean = false;
   messageSelected: boolean = false;
   messagePressed: boolean = false;
   messageNotPressed: boolean = true;
