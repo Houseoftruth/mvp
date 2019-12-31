@@ -143,6 +143,15 @@ if(this.chatInputOpen){
 
     console.log(this.name)
   }
+  openChatBox() {
+    if(this.receiptPressed){
+      this.receiptPressed=false;
+      
+    }else{
+      this.receiptPressed=true;
+    
+    }
+  }
   getInput22() {
     //this.name = 'Nancy';
     let newTMessage = {
@@ -163,13 +172,7 @@ if(this.chatInputOpen){
     }
     let messageArray = [newTMessage, newKMessage]
 
-if(this.receiptPressed){
-  this.receiptPressed=false;
-  
-}else{
-  this.receiptPressed=true;
 
-}
 
     this.bothMessages.push(newKMessage)
     console.log(newKMessage.array + 1)

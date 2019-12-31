@@ -122,7 +122,7 @@
         <input [(ngModel)]="name" #ctrl="ngModel" placeholder="Place your order here..." id="first_name" type="text"
             class="validate">
         <label for="first_name">First Name</label>
-        <div class="col s12 right-align">                <i class="material-icons" style="font-size:35px;">keyboard_return</i>
+        <div class="col s12 right-align"(click)="getInput()">                <i class="material-icons" style="font-size:35px;">keyboard_return</i>
         </div>
         <div class="col s3 ">  </div>
         <div class="col s6 "style="border:1px solid grey lighten-4;">  </div>
@@ -131,7 +131,7 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col s4 center-align"#tmessageDiv2 (click)="getInput()">
+            <div class="col s4 center-align"#tmessageDiv2 (click)="openChatBox()">
 
                 <object id="svg-object" class="animated fadeIn" style="height:50px; width:50px;"[hidden]="messagePressed" data='../assets/messageicon.svg'
                     type="image/svg+xml"></object> 
