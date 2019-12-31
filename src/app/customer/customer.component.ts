@@ -143,6 +143,8 @@ if(this.messagePressed){
       
     }else{
       this.chatInputOpen=true;
+      window.navigator.vibrate(50);
+
     
     }
   }
