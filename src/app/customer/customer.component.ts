@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ViewChildren, QueryList, ElementRef, AfterViewInit, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-customer',
@@ -6,9 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./customer.component.css']
 })
 export class CustomerComponent implements OnInit {
+  @ViewChildren("tmessageDiv") tmessageDivs: QueryList<ElementRef>;
+
+  ngAfterViewInit() {
+    this.tmessageDivs.changes.subscribe(() => {
+      if (this.tmessageDivs && this.tmessageDivs.last) {
+        this.tmessageDivs.last.nativeElement.focus();
+      }
+    });
+  }
+  title = 'mvp-angular!';
+  name: string = '';
+  options: boolean = false;
+  messageSelected: boolean=false;
   audio = new Audio();
   audio2 = new Audio();
-  name:string=''
   bothMessages = [{
     name: "Table #32",
     body: "May i please have some more celery on my plate, please. :)"
