@@ -1,4 +1,4 @@
-import { Component, ViewChildren, QueryList, ElementRef, AfterViewInit, OnInit} from '@angular/core';
+import { Component, ViewChildren, QueryList, ElementRef, AfterViewInit, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-customer',
@@ -18,7 +18,7 @@ export class CustomerComponent implements OnInit {
   title = 'mvp-angular!';
   name: string = '';
   options: boolean = false;
-  messageSelected: boolean=false;
+  messageSelected: boolean = false;
   audio = new Audio();
   audio2 = new Audio();
   bothMessages = [{
@@ -29,10 +29,13 @@ export class CustomerComponent implements OnInit {
     body: "May i please have some more celery on my plate, please. :)"
   }, {
     name: "Table #8",
-    body: "May i please have some more celery on my plate, please. :)"
+    body: "May i please have some more celery on my plate, please. :)",
+
   }, {
     name: "Kitchen",
-    body: "May i please have some more celery on my plate, please. :)"
+    body: "May i please have some more celery on my plate, please. :)",
+    color: ' col s12 l3 right-align   animated fadeIn grey lighten-4',
+    colorposition: 'grey'
   }];
   kitchenMessages = [{
     name: "Kitchen",
@@ -44,16 +47,39 @@ export class CustomerComponent implements OnInit {
     name: "Kitchen",
     body: "May i please have some more celery on my plate, please. :)"
   }]
-  selecto() {
+  selecto(loopindex) {
+    console.log(loopindex)
+    console.log(this.bothMessages[loopindex])
+    if (this.bothMessages[loopindex].colorposition == 'red') {
+
+      this.bothMessages[loopindex].color = ' col s12 l3 right-align   animated fadeIn grey lighten-4'
+      this.bothMessages[loopindex].colorposition = 'grey'
+      console.log(this.bothMessages[loopindex].colorposition)
+      
+    } else if (this.bothMessages[loopindex].colorposition == 'green') {
+
+      this.bothMessages[loopindex].color = ' col s12 l3 right-align   animated fadeIn red lighten-4'
+      this.bothMessages[loopindex].colorposition = 'red'
+      console.log(this.bothMessages[loopindex].colorposition)
+      console.log("Here")
+
+    }else if (this.bothMessages[loopindex].colorposition == 'grey') {
+
+      this.bothMessages[loopindex].color = ' col s12 l3 right-align   animated fadeIn green lighten-4'
+      this.bothMessages[loopindex].colorposition = 'green'
+      console.log(this.bothMessages[loopindex].colorposition)
+
+    }
+
 
     this.audio2.src = "../assets/tap.wav";
     this.audio2.load();
     this.audio2.play();
-    
-    if(!this.options){
+
+    if (!this.options) {
       this.options = true;
       this.messageSelected = true;
-    }else{
+    } else {
       this.options = false;
       this.messageSelected = false;
 
@@ -63,27 +89,27 @@ export class CustomerComponent implements OnInit {
   getInput() {
     //this.name = 'Nancy';
     let newTMessage = {
-      name: "Table 8",
+      name: "Table #8",
       body: this.name,
-      color:' col s12 l3 right-align   animated fadeIn green lighten-4',
-      array:0
+      color: ' col s12 l3 right-align   animated fadeIn green lighten-4',
+      array: 0
     }
     let newKMessage = {
       name: "Kitchen",
       body: this.name,
-      color:' col s12 l3 right-align   animated fadeIn red lighten-4',
-      array:1
+      color: ' col s12 l3 right-align   animated fadeIn red lighten-4',
+      array: 1
 
     }
-    let messageArray = [newTMessage,newKMessage]
-
-   
-      this.bothMessages.push(newTMessage)
-      console.log(newKMessage.array+1)
+    let messageArray = [newTMessage, newKMessage]
 
 
-    
-    
+    this.bothMessages.push(newTMessage)
+    console.log(newKMessage.array + 1)
+
+
+
+
     this.audio.src = "../assets/sendmessage.wav";
     this.audio.load();
     this.audio.play();
@@ -96,24 +122,24 @@ export class CustomerComponent implements OnInit {
     let newTMessage = {
       name: "Table 8",
       body: this.name,
-      color:' col s12 l3 right-align   animated fadeIn green lighten-4',
-      array:0
+      color: ' col s12 l3 right-align   animated fadeIn green lighten-4',
+      array: 0
     }
     let newKMessage = {
       name: "Kitchen",
       body: this.name,
-      color:' col s12 l3 right-align   animated fadeIn red lighten-4',
-      array:1
+      color: ' col s12 l3 right-align   animated fadeIn red lighten-4',
+      array: 1
 
     }
-    let messageArray = [newTMessage,newKMessage]
+    let messageArray = [newTMessage, newKMessage]
 
-   
-      this.bothMessages.push(newKMessage)
-      console.log(newKMessage.array+1)
 
-    
-    
+    this.bothMessages.push(newKMessage)
+    console.log(newKMessage.array + 1)
+
+
+
     this.audio.src = "../assets/sendmessage.wav";
     this.audio.load();
     this.audio.play();

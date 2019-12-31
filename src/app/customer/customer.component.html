@@ -17,9 +17,9 @@
             -->
          
       
-            <div (click)="selecto()" 
-          tabindex="1" #tmessageDiv *ngFor="let tmessage of bothMessages" class=" {{tmessage.color}}"[ngClass]="{
-              'lighten-2':messageSelected,
+            <div (click)="selecto(i)" 
+          tabindex="1" #tmessageDiv *ngFor="let tmessage of bothMessages let i = index" class=" {{tmessage.color}}"[ngClass]="{
+              'lighten-3':messageSelected,
               
               'lighten-4':!messageSelected
             }">
