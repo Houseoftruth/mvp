@@ -133,7 +133,8 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col s4 center-align"#tmessageDiv2 (click)="openChatBox()">
+            <div class="col s4 center-align"#tmessageDiv2 >
+                    <div (click)="openChatBox()">
 
                 <object id="svg-object" class="animated fadeIn" style="height:50px; width:50px;"[hidden]="messagePressed" data='../assets/messageicon.svg'
                     type="image/svg+xml"></object> 
@@ -149,12 +150,13 @@
 
             </div>
 
-            <div class="col s4 center-align" (click)="getInput22()">
-
+            <div class="col s4 center-align" >
+<div (click)="getInput22()">
                 <object id="svg-object" class = "animated fadeIn"style="height:50px; width:50px;"[hidden]="receiptPressed"  data='../assets/reciepticon.svg'
                     type="image/svg+xml"></object>
                     <object id="svg-object"  class = "animated fadeIn" style="height:50px; width:50px;"[hidden]="!receiptPressed"  data='../assets/reciepticonpressed.svg'
                     type="image/svg+xml"></object>
+                    </div>
 
             </div>
             <!--
