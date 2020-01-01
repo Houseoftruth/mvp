@@ -126,13 +126,7 @@ export class CustomerComponent implements OnInit {
     this.bothMessages.push(newTMessage)
     console.log(newKMessage.array + 1)
 
-if(this.messagePressed){
-  this.messagePressed=false;
 
-}else{
-  this.messagePressed=true;
-
-}
 
 
     this.audio.src = "../assets/send.wav";
@@ -151,13 +145,20 @@ if(this.messagePressed){
 
     if(this.chatInputOpen){
       this.chatInputOpen=false;
-      window.navigator.vibrate(50);
+     // window.navigator.vibrate(50);
 
       
     }else{
       this.chatInputOpen=true;
-      window.navigator.vibrate(50);
+     // window.navigator.vibrate(50);
 
+    
+    }
+    if(this.messagePressed){
+      this.messagePressed=false;
+    
+    }else{
+      this.messagePressed=true;
     
     }
   }
