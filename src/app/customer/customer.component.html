@@ -126,8 +126,10 @@
         <input [(ngModel)]="name" #ctrl="ngModel" placeholder="Place your order here..." id="first_name" type="text"
             class="validate">
         <label for="first_name">First Name</label>
-        <div class="col s12 right-align"(click)="getInput()">                <i class="material-icons" style="font-size:30px;">keyboard_return</i>
-        </div>
+        <div class="col s12 right-align"(click)="getInput()">              
+            <object id="svg-object" class="animated fadeIn" style="height:50px; width:50px;"[hidden]="messagePressed" data='../assets/quickordericon.svg'
+            type="image/svg+xml"></object> 
+</div>
         <div class="col s3 ">  </div>
         <div class="col s6 "style="border:1px solid grey lighten-4;">  </div>
         <div class="col s3 ">  </div>
