@@ -32,6 +32,8 @@ export class CustomerComponent implements OnInit {
   receiptPressed: boolean = false;
   audio = new Audio();
   audio2 = new Audio();
+  audio3 = new Audio();
+
   bothMessages = [{
     name: "Table #32",
     body: "May i please have some more celery on my plate, please. :)"
@@ -85,6 +87,7 @@ export class CustomerComponent implements OnInit {
 
 
     this.audio2.src = "../assets/tap.wav";
+    
     this.audio2.load();
     this.audio2.play();
 
@@ -131,14 +134,20 @@ if(this.messagePressed){
 }
 
 
-    this.audio.src = "../assets/sendmessage.wav";
+    this.audio.src = "../assets/send.wav";
     this.audio.load();
-   // this.audio.play();
+    this.audio.play();
     window.navigator.vibrate(50);
 
     console.log(this.name)
   }
   openChatBox() {
+    
+    this.audio3.src = "../assets/swoosh.wav";
+    
+    this.audio3.load();
+    this.audio3.play();
+
     if(this.chatInputOpen){
       this.chatInputOpen=false;
       window.navigator.vibrate(50);
@@ -184,7 +193,7 @@ if(this.receiptPressed){
 
 
 
-    this.audio.src = "../assets/sendmessage.wav";
+    this.audio.src = "../assets/send.wav";
     this.audio.load();
     this.audio.play();
     window.navigator.vibrate(50);
