@@ -33,6 +33,7 @@ export class CustomerComponent implements OnInit {
   audio = new Audio();
   audio2 = new Audio();
   audio3 = new Audio();
+  audio4 = new Audio();
 
   bothMessages = [{
     name: "Table #32",
@@ -193,9 +194,9 @@ if(this.receiptPressed){
 
 
 
-    this.audio.src = "../assets/send.wav";
-    this.audio.load();
-    this.audio.play();
+    this.audio4.src = "../assets/kitchen.wav";
+    this.audio4.load();
+    this.audio4.play();
     window.navigator.vibrate(50);
 
     console.log(this.name)
