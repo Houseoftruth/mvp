@@ -4,25 +4,25 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="1000px" height="1000px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
 <g>
-	<path fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" d="M112.5,902.5c0,0,172-648,854-460
+	<path fill="none" stroke="#FFFFFF" stroke-width="20" stroke-miterlimit="10" d="M112.5,902.5c0,0,172-648,854-460
 		C966.5,442.5,792.5,954.5,112.5,902.5z"/>
 </g>
-<path fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" d="M201.705,709.259c0,0,162.795,13.241,200.795,41.241
-	s-96.776-151.072-122.388-144.536"/>
-<path fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" d="M201.705,709.259c0,0,162.795,13.241,200.795,41.241
-	s-96.776-151.072-122.388-144.536"/>
-<path fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" d="M402.205,501.286
+<path fill="none" stroke="#FFFFFF" stroke-width="20" stroke-miterlimit="10" d="M201.705,709.259
+	c0,0,162.795,13.241,200.795,41.241s-96.776-151.072-122.388-144.536"/>
+<path fill="none" stroke="#FFFFFF" stroke-width="20" stroke-miterlimit="10" d="M201.705,709.259
+	c0,0,162.795,13.241,200.795,41.241s-96.776-151.072-122.388-144.536"/>
+<path fill="none" stroke="#FFFFFF" stroke-width="20" stroke-miterlimit="10" d="M402.205,501.286
 	c0,0,156.295,42.792,198.295,127.503c0,0-44.609-196.117-59.815-191.631"/>
-<path fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" d="M709.929,405.924c0,0,66.696,118.156,66.374,156.351
-	c-0.323,38.193,51.709-131.256,35.718-146.172"/>
+<path fill="none" stroke="#FFFFFF" stroke-width="20" stroke-miterlimit="10" d="M709.929,405.924
+	c0,0,66.696,118.156,66.374,156.351c-0.323,38.193,51.709-131.256,35.718-146.172"/>
 <g>
-	<path fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" d="M353.926,900.384c0,41.25-33.75,75-75,75H187.5
+	<path fill="none" stroke="#FFFFFF" stroke-width="20" stroke-miterlimit="10" d="M353.926,900.384c0,41.25-33.75,75-75,75H187.5
 		c-41.25,0-75-33.75-75-75V292.5c0-41.25,33.75-75,75-75h91.426c41.25,0,75,33.75,75,75V900.384z"/>
 </g>
-<polyline fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" points="195.705,241.5 195.705,71.5 268.297,71.5 
+<polyline fill="none" stroke="#FFFFFF" stroke-width="20" stroke-miterlimit="10" points="195.705,241.5 195.705,71.5 268.297,71.5 
 	268.297,241.5 "/>
-<rect x="195.705" y="19.103" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" width="72.592" height="54.795"/>
-<path fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" d="M209.5,36.5"/>
+<rect x="195.705" y="19.103" fill="none" stroke="#FFFFFF" stroke-width="20" stroke-miterlimit="10" width="72.592" height="54.795"/>
+<path fill="none" stroke="#FFFFFF" stroke-width="20" stroke-miterlimit="10" d="M209.5,36.5"/>
 <path display="none" d="M242.5,27.5c-6.449,0-6.449,10,0,10S248.948,27.5,242.5,27.5z"/>
 <path display="none" d="M243.5,53.5c-2.497,0-4.023,1.501-4.586,3.339c-0.801-0.81-1.936-1.339-3.414-1.339c-6.449,0-6.449,10,0,10
 	c2.497,0,4.023-1.501,4.586-3.339c0.801,0.81,1.936,1.339,3.414,1.339C249.948,63.5,249.948,53.5,243.5,53.5z"/>
