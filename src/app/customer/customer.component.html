@@ -120,7 +120,8 @@
 
 <footer class="page-footer black" style="box-shadow:2px 2px 2px grey;" >
     <div class="input-field col s12" [hidden]="!chatInputOpen">
-            <div class="col s12 right-align"(click)="getInput()">                <i class="material-icons" style="font-size:20px;">clear </i>
+            <div class="col s12 right-align"(click)="openChatBox()">               
+                 <i class="material-icons" style="font-size:20px;">clear </i>
             </div>
         <input [(ngModel)]="name" #ctrl="ngModel" placeholder="Place your order here..." id="first_name" type="text"
             class="validate">
