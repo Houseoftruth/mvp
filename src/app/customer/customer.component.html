@@ -127,7 +127,7 @@
             class="validate">
         <label for="first_name" class="montserrat"style="font-size:15px;">First Name</label>
         <div class="col s12 right-align"(click)="getInput()">              
-            <i class="material-icons" style="font-size:30px;">keyboard_return</i>
+            <i class="material-icons" style="font-size:23px;">keyboard_return</i>
         </div>
         <div class="col s3 ">  </div>
         <div class="col s6 "style="border:1px solid grey lighten-4;">  </div>
@@ -136,7 +136,7 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col s4 center-align"#tmessageDiv2 (click)="openChatBox()">
+            <div class="col s4 center-align"#tmessageDiv2 style="border-right:1px solid white;" (click)="openChatBox()">
 
                 <object id="svg-object" class="animated fadeIn" style="height:50px; width:50px;"[hidden]="messagePressed" data='../assets/messageicon.svg'
                     type="image/svg+xml"></object> 
@@ -153,7 +153,7 @@ type="image/svg+xml"></object>
 
             </div>
 
-            <div class="col s4 center-align" (click)="getInput22()">
+            <div class="col s4 center-align"style="border-left:1px solid white;" (click)="getInput22()">
 
                 <object id="svg-object" class = "animated fadeIn"style="height:50px; width:50px;"[hidden]="receiptPressed"  data='../assets/reciepticon.svg'
                     type="image/svg+xml"></object>
