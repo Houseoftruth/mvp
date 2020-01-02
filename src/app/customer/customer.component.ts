@@ -29,6 +29,8 @@ export class CustomerComponent implements OnInit {
   messageSelected: boolean = false;
   messagePressed: boolean = false;
   messageNotPressed: boolean = true;
+  qboxSelected: boolean = false;
+
   receiptPressed: boolean = false;
   audio = new Audio();
   audio2 = new Audio();
@@ -61,6 +63,13 @@ export class CustomerComponent implements OnInit {
     name: "Kitchen",
     body: "May i please have some more celery on my plate, please. :)"
   }]
+  openQBox(){
+    if(this.qboxSelected){
+      this.qboxSelected= false;
+    }else{
+      this.qboxSelected = true;
+    }
+  }
   selecto(loopindex) {
     console.log(loopindex)
     console.log(this.bothMessages[loopindex])
