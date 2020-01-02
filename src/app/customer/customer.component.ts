@@ -107,6 +107,7 @@ export class CustomerComponent implements OnInit {
     } else {
       this.options = false;
       this.messageSelected = false;
+      this.qboxSelected = false;
 
     }
     //window.navigator.vibrate(50);
@@ -154,11 +155,13 @@ export class CustomerComponent implements OnInit {
 
     if(this.chatInputOpen){
       this.chatInputOpen=false;
+
      // window.navigator.vibrate(50);
 
       
     }else{
       this.chatInputOpen=true;
+      this.qboxSelected = false;
      // window.navigator.vibrate(50);
 
     
@@ -168,6 +171,7 @@ export class CustomerComponent implements OnInit {
     
     }else{
       this.messagePressed=true;
+      this.qboxSelected = false;
     
     }
   }
