@@ -69,6 +69,7 @@ export class CustomerComponent implements OnInit {
     }else{
       this.qboxSelected = true;
       this.messageSelected = false;
+      this.chatInputOpen = false;
     }
   }
   selecto(loopindex) {
