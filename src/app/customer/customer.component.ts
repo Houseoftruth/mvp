@@ -105,11 +105,12 @@ export class CustomerComponent implements OnInit {
 
     if (!this.options) {
       this.options = true;
-      this.messageSelected = true;
+      //this.messageSelected = true;
     } else {
       this.options = false;
       this.messageSelected = false;
       this.qboxSelected = false;
+      
 
     }
     //window.navigator.vibrate(50);
