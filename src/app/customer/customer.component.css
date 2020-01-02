@@ -3,7 +3,9 @@
 }
  /* label focus color */
  .input-field input[type=text] {
-    color: grey
+     
+    color: grey,
+   
 }
 /* label underline focus color */
 .input-field input[type=text]{
