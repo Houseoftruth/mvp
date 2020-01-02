@@ -64,6 +64,10 @@ export class CustomerComponent implements OnInit {
     body: "May i please have some more celery on my plate, please. :)"
   }]
   openQBox(){
+    this.audio3.src = "../assets/swoosh.wav";
+    
+    this.audio3.load();
+    this.audio3.play();
     if(this.qboxSelected){
       this.qboxSelected= false;
     }else{
