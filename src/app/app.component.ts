@@ -38,18 +38,7 @@ export class AppComponent {
     name: "Table #14",
     body: "May i please have some more celery on my plate, please. :)"
   }];
-  kitchenMessages = [{
-    name: "Kitchen",
-    body: "May i please have some more celery on my plate, please. :)"
-  }, {
-    name: "Kitchen",
-    body: "May i please have some more celery on my plate, please. :)"
-  }, {
-    name: "Kitchen",
-    body: "May i please have some more celery on my plate, please. :)"
-  }, {
-    name: "Kitchen",
-    body: "May i please have some more celery on my plate, please. :)"
+  kitchenMessages = [
   }];
   getInput2() {
     //this.name = 'Nancy';
