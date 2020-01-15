@@ -39,7 +39,7 @@ export class AppComponent {
     body: "May i please have some more celery on my plate, please. :)"
   }];
   kitchenMessages = [
-  }];
+  ];
   getInput2() {
     //this.name = 'Nancy';
     let newKMessage = {
