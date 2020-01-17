@@ -11,7 +11,7 @@ phases:
     pre_build:
       commands:
         - npm install
-        - echo ./
+        - echo path
 
     build:
       commands:
