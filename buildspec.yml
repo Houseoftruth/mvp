@@ -10,8 +10,8 @@ phases:
       
     pre_build:
       commands:
+        - echo PATH
         - npm install
-        - echo HELLO
 
     build:
       commands:
