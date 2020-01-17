@@ -22,5 +22,6 @@ phases:
           - '**/*.js'
           - '**/*.css'
           - '**/*.ico'
-        discard-paths: yes
         base-directory: 'dist/mvp-angular'
+        discard-paths: yes
+
