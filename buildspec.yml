@@ -21,6 +21,6 @@ phases:
       - npm run build:ci 
   post_build:
     commands:
-     - aws s3 sync ./dist/mvp-angular s3://lion-bucket --acl 'public-read' --delete
+     - aws s3 sync ./dist/mvp-angular s3://lion-bucket --acl 'public-read' --delete 
 
 
