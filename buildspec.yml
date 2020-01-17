@@ -8,10 +8,10 @@ phases:
     commands:
      - echo PATH
      - npm install
- build:
+build:
    commands:
       - npm run build:ci 
-    artifacts:
+artifacts:
     files:
       - '**/*.html'
       - '**/*.js'
