@@ -1,26 +1,21 @@
 version: 0.2
 
 phases: 
-
   install:
     runtime-versions:
       nodejs: 10
-     
-
-      
-    pre_build:
-      commands:
-        - echo PATH
-        - npm install
-
-    build:
-      commands:
-        - npm run build:ci 
-      artifacts:
-        files:
-          - '**/*.html'
-          - '**/*.js'
-          - '**/*.css'
-          - '**/*.ico'
-        base-directory: 'dist/mvp-angular'
+  pre_build:
+    commands:
+     - echo PATH
+     - npm install
+ build:
+   commands:
+      - npm run build:ci 
+    artifacts:
+    files:
+      - '**/*.html'
+      - '**/*.js'
+      - '**/*.css'
+      - '**/*.ico'
+    base-directory: 'dist/mvp-angular'
 
