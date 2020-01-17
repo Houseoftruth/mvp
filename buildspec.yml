@@ -21,13 +21,6 @@ build:
       - npm run build:ci 
 post_build:
     commands:
-     - aws s3 sync ./dist/mvp-angular s3://lion-bucket --acl "public-read" --delete
-     - npm install
-artifacts:
-    files:
-      - '**/*.html'
-      - '**/*.js'
-      - '**/*.css'
-      - '**/*.ico'
-    base-directory: 'dist/mvp-angular'
+     - aws s3 sync ./dist/mvp-angular s3://lion-bucket --acl public-read' --delete
+
 
