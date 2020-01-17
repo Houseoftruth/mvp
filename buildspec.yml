@@ -11,15 +11,15 @@ phases:
     pre_build:
       commands:
         - npm install
-      finally:
-        - echo Executing Pre Build Finally
-      build:
+
+    build:
       commands:
-        - ng build --prod
+        - npm run build:ci
       artifacts:
         files:
           - '**/*.html'
           - '**/*.js'
           - '**/*.css'
           - '**/*.ico'
-        base-directory: './'
+        discard-paths: yes
+        base-directory: 'dist/mvp-angular'
