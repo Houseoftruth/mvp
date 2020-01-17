@@ -7,23 +7,12 @@ phases:
       nodejs: 10
      
 
-    commands:
-      - echo Executing Install Phase
-    finally:
-      - echo Executing Install Finally
-  pre_build:
-    commands:
-      - echo Executing Pre Build Phase
-    finally:
-      - echo Executing Pre Build Finally
-  build:
-    commands:
-      - echo Executing Build Phase
-    finally:
-      - echo Executing Build Finally
-  post_build:
-    commands:
-      - echo Executing Post Build Phase
-    finally:
-      - echo Executing Post Build Finally
-    
+      
+    pre_build:
+      commands:
+        - npm install
+      finally:
+        - echo Executing Pre Build Finally
+    build:
+      commands:
+        - ng build --prod
