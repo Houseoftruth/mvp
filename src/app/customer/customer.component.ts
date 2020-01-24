@@ -1,5 +1,5 @@
 import { Component, ViewChildren, QueryList, ElementRef, AfterViewInit, OnInit } from '@angular/core';
-
+import { ApiService } from '../api.service';
 @Component({
   selector: 'app-customer',
   templateUrl: './customer.component.html',
@@ -222,9 +222,13 @@ if(this.receiptPressed){
 
     console.log(this.name)
   }
-  constructor() { }
+  constructor( private apiService: ApiService) { }
 
   ngOnInit() {
+    this.apiService.getNews().subscribe((data)=>{
+      console.log(data);
+      
+    });
   }
 
 }
